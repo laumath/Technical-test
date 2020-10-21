@@ -14,10 +14,10 @@ for i in range(s):#sumatoria (a ^ p + b ^ (p+1) + c ^(p+2) + d ^ (p+3) + ...)
     sumatoria =ser[i]**(p+i)+sumatoria
 print(sumatoria)
 
-k=sumatoria % int(a) #Operador modulo in Python
-print(k)
+r=sumatoria % int(a) #Operador modulo in Python
+print(r)
 #sumatoria=int(a)*k+r, k y r existe por el algoritmo de la division, asi mismo cuando r=0 obtenemos k
 if r==0:#Para el caso en que el residuo se anula
-  print("k es"+str(sumatoria/int(a)))
+  print("k es"+str(sumatoria/int(a)))#k
 else:#en caso contrario
   print("En caso contrario -1")
